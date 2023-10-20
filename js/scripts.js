@@ -5,8 +5,9 @@ window.addEventListener("load", function () {
 
 function LanguagePicker(event) {
     event.preventDefault();
-    const color = document.querySelector("input#input1").value;
-    const phonePercent = document.querySelector("select#input2").value;
+    let result = "";
+    const color = document.querySelector("input#input1").value.toLowerCase();
+    const phonePercent = document.querySelector("input#input2").value;
     const starterType = document.querySelector("select#input3").value;
     const milkCereal = document.querySelector("input[name='input4']:checked").value;
     const ShoeSock = document.querySelector("input[name='input5']:checked").value;
@@ -14,17 +15,30 @@ function LanguagePicker(event) {
 
 
 
-    if (color === "blue" || color === "BLUE" || color === "Blue") {
-        result = "C++, C C#"
+    if (color === "blue") {
+        result = "C++"
     } else if (phonePercent > 50 && ShoeSock === "skse") {
-        result = "Rust, Lua, Groovy "
-    } else if (milkCereal === "cereal" && (color === "red" || color === "RED" || color === "Red")) {
-        result = "Assembly, D, F#"
-    } else if (starterType == "fire" && milkCereal === "milk"){
-result = "Scheme, Dart, Swift"
+        result = " Groovy "
+    } else if (milkCereal === "cereal" && color === "Red") {
+        result = "Assembly"
+    } else if (starterType === "fire" && milkCereal === "milk") {
+        result = "Scheme"
+    }else if(ShoeSock === "skse"){
+        result = "Machine code"
+    }else if(ShoeSock === "sksk"){
+        result = "F#"
+    }else if(color === "yellow"){
+        result = "D"
+    }else if (phonePercent > 50 && phonePercent <  65) {
+        result = "Lua "
+    }else if (color === "brown") {
+        result = "Rust "
+    }else if (starterType === "grass" && color === "green") {
+        result = "Python"    
+    }else{
+    result = "JavaScript"
     }
-    else
-result = "JavaScript"
-
-document.getElementById("output").innerText = result;
+    document.getElementById("output").innerText = result;
 }
+
+

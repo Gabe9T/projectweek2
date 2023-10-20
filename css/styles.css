@@ -1,6 +1,6 @@
 .outcome {
 
-    color: gold;
+    color: rgb(136, 39, 39);
 
 }
 .border {
@@ -11,4 +11,9 @@
 
 .right {
     float: right;
+}
+ 
+.all {
+    color: rgb(0, 0, 0);
+background-color: teal
 }

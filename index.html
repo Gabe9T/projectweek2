@@ -9,51 +9,51 @@
     <title>Language Picker</title>
 </head>
 
-<body>
+<body class="all">
     <div class="right">
-        <img class="border" src=url(..img/allcodes.gif) alt="all Languages">
+        <img class="border" src="../img/allcodes.gif" alt="all Languages">
     </div>
     <h1>What Language Should You Use?</h1>
     <form id="Languagepick">
-        <label for="input1">Favorite Color?</label>
-        <input id="input1" type="text">
+        <label for="input1"><h2>Favorite Color?</h2></label> 
         <br />
+        <input id="input1" type="text"> 
         <br />
-        <label for="input2">What battery percentage is your phone at this current momment?</label>
-        <input id="input2" type="number" max="100">
+        <label for="input2"><h2>What battery percentage is your phone at this current moment?</h2></label>
+        <br /> <input id="input2" type="number" maxlength="3">
         <br />
-        <br />
-        <label for="input3">What starter type of pokemon do you chose?</label>
-        <select id="input3">
+        <label for="input3"><h2>What starter type of pokemon do you choose?</h2></label> <select id="input3">
             <option>Grass</option>
             <option>Water</option>
             <option>Fire</option>
-        </select>
+            <br />
+       
+        </select> 
         <br />
+        <h2>Milk or Ceral First?</h2>
+        
+        <label for="input4_milk">Milk</label> 
+        <input type="radio" id="input4_milk" name="input4" value="milk">
         <br />
-        <label for="input4">Milk or Cereal first?</label>
+        <label for="input4_cereal">Cereal</label> 
+        <input type="radio" id="input4_cereal" name="input4" value="cereal">
         <br />
-
-        <input type="radio" name="input4" value="milk">Milk
+        <h2>Sock, Sock, Shoe, Shoe or Sock, Shoe, Sock, Shoe?</h2>
+        <label for="input5_skse">Sock, Shoe, Sock, Shoe</label> 
+        <input type="radio" id="input5_skse" name="input5"  value="skse"> 
         <br />
-        <input type="radio" name="input4" value="cereal">Cereal
-        </label>
+        <label for="input5_sksk">Sock, Sock, Shoe, Shoe</label> 
+        <input type="radio" id="input5_sksk" name="input5" value="sksk">
         <br />
-        <br />
-        <label for="input5">Sock, Sock, Shoe, Shoe or Sock, Shoe, Sock, Shoe?</label>
-        <br />
-
-        <input type="radio" name="input5" value="skse">Sock, Shoe, Sock, Shoe
-        <br />
-        <input type="radio" name="input5" value="sksk">Sock, Sock, Shoe, Shoe
         </label>
         <br />
         <br />
         <button type="submit" class="btn">Submit</button>
     </form>
 
-    <h2><span class="outcome">Your Language:</span></h2>
+    <h2><span class="outcome">The Language You Should Learn:</span></h2>
     <p id="output"></p>
+    <img class="border" src="../img/typetype.gif" alt="all Languages">
 </body>
 
 </html>
