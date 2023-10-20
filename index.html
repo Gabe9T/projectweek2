@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Language Picker</title>
+</head>
+
+<body>
+    <div class="right">
+        <img class="border" src=url(..img/allcodes.gif) alt="all Languages">
+    </div>
+    <h1>What Language Should You Use?</h1>
+    <form id="Languagepick">
+        <label for="input1">Favorite Color?</label>
+        <input id="input1" type="text">
+        <br />
+        <br />
+        <label for="input2">What battery percentage is your phone at this current momment?</label>
+        <input id="input2" type="number" max="100">
+        <br />
+        <br />
+        <label for="input3">What starter type of pokemon do you chose?</label>
+        <select id="input3">
+            <option>Grass</option>
+            <option>Water</option>
+            <option>Fire</option>
+        </select>
+        <br />
+        <br />
+        <label for="input4">Milk or Cereal first?</label>
+        <br />
+
+        <input type="radio" name="input4" value="milk">Milk
+        <br />
+        <input type="radio" name="input4" value="cereal">Cereal
+        </label>
+        <br />
+        <br />
+        <label for="input5">Sock, Sock, Shoe, Shoe or Sock, Shoe, Sock, Shoe?</label>
+        <br />
+
+        <input type="radio" name="input5" value="skse">Sock, Shoe, Sock, Shoe
+        <br />
+        <input type="radio" name="input5" value="sksk">Sock, Sock, Shoe, Shoe
+        </label>
+        <br />
+        <br />
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <h2><span class="outcome">Your Language:</span></h2>
+    <p id="output"></p>
+</body>
+
+</html>
